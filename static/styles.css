@@ -1,0 +1,252 @@
+body:not(.music-page) {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
+
+.music-page {
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-body {
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.music-list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%; /* Fixed width for the music list */
+    text-align: left; /* Left-align the music list */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Add scrolling if the content overflows */
+    cursor: pointer;
+    padding: 5px;
+}
+
+.music-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    height: 100%; /* Take up 100% of vertical space */
+}
+
+.music-list li {
+    margin-bottom: 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.music-list h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.music-container {
+    text-align: center;
+    width: 300px; /* Adjust as needed */
+    height: 520px; /* Adjust as needed */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    margin-top: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.conatainer-backfround {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.controls button:hover {
+    background-color: #eaeaea;
+}
+
+.controls button i {
+    font-size: 24px;
+    color: #333333;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input[type="file"] {
+    margin: 10px 0;
+}
+
+form button {
+    background-color: #ff6e7f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff4757;
+}
+
+#youtube {
+    margin-top: 20px;
+}
+
+#youtube input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+#youtube button {
+    background-color: #ff6e7f;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#youtube button:hover {
+    background-color: #ff4757;
+}
+
+#youtubePlayer {
+    margin-top: 20px;
+}
+
+#correctAge {
+    height: 30px; /* Adjust the height as needed */
+    border-radius: 10px; /* Adjust the border radius as needed */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#player-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Adjust as needed */
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+#song-name-container {
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+#song-name {
+    display: inline-block;
+    padding: 10px 0;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.highlighted {
+    background-color: #a52020; /* Choose your highlight color */
+    font-weight: bold; /* Example style */
+    border-radius: 2%;
+}
+
+audio {
+    display: none; /* Hide the native audio player */
+}

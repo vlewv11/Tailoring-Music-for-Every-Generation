@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Is your age {{predicted_age}}?</h1>
+        <p>Please enter your actual age</p>
+        <form id="ageConfirmationForm" action="{{ url_for('confirm_age') }}" method="post">
+            <input type="hidden" name="predicted_age" value="{{ predicted_age }}">
+            <input type="number" id="correctAge" name="correct_age" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='predict.js') }}"></script>
+</body>
+</html>
