@@ -16,7 +16,7 @@ Batch Normalization: To normalize activations and gradients throughout training,
 
 Data Augmentation: To artificially increase the diversity of the training dataset by applying transformations to the images.
 
-The model achieves a Mean Absolute Error (MAE) of 7.98, indicating the average deviation of the predicted age from the actual age.
+The model achieves a Mean Absolute Error (MAE) of 5.32, indicating the average deviation of the predicted age from the actual age.
 
 2. Flask Server
    
